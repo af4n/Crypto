@@ -1,0 +1,56 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+h1 {
+  font-family: Circe-Bold;
+}
+
+.header {
+  height: 730px;
+  background: url(../images/bg1.png) #eee;
+  padding-top: 20px;
+  &__navbar {
+    height: 50px;
+    line-height: 50px;
+  }
+  &__logo {
+    float: left;
+  }
+  &__currency {
+    float: left;
+    color: white;
+    &-percent {
+      background-color: white;
+      color: red;
+      border-radius: 20px;
+      padding: 10px;
+      vertical-align: middle;
+    }
+  }
+  &__nav {
+    float: right;
+    display: inline-block;
+    &-register {
+      border: 2px solid white;
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+    ul li {
+      display: inline;
+      margin-left: 25px;
+      color: white;
+    }
+  }
+  &__content {
+    text-align: center;
+    &-btn {
+      background-color: #a3cd8c;
+      border: 1px solid #a3cd8c;
+      border-radius: 20px;
+      color: white;
+    }
+  }
+}
