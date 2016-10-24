@@ -1,0 +1,2 @@
+npm install --save-dev gulp --save-dev gulp-load-plugins browser-sync --save del --save wiredep --save-dev gulp-plumber gulp-sourcemaps gulp-sass --save-dev --save-dev gulp-autoprefixer --save-dev gulp-babel babel-preset-es2015 main-bower-files
+bower install
