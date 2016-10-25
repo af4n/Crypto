@@ -10,12 +10,19 @@ h1 {
 p {
   font-family: Circe;
 }
+hr {
+
+  margin: 0;
+  width: 100%;
+  opacity: 0.25;
+}
 
 .header {
   height: 730px;
   background: url(../images/bg1.png) #eee;
   padding-top: 20px;
-  &__navbar {
+  border-bottom: 5px solid white;
+    &__navbar {
     height: 50px;
   }
   &__logo {
@@ -49,8 +56,9 @@ p {
       padding: 10px 20px;
       transition: background-color .2s ease-in-out, color .2s ease-in-out, box-shadow .2s ease-in-out;
       &:hover {
-        background: #eb5a63;
-        border: 2px solid #eb5a63;
+        background: white;
+        border: 2px solid white;
+        color: #6b758e;
         transition: background-color .2s ease-in-out, color .2s ease-in-out, box-shadow .2s ease-in-out;
         }
       }
@@ -198,7 +206,6 @@ p {
     }
   }
   &__growth {
-    float: left;
     &-content {
       padding: 0 100px 0 15px;
       margin: 100px 0 90px 0;
@@ -239,6 +246,7 @@ p {
   }
   &__news {
     color: white;
+    padding-top: 80px;
     &-transactions {
       padding-bottom: 100px;
       h2 {
@@ -284,6 +292,7 @@ p {
   }
 }
 .footer {
+  background: #3a4258;
   .contacts {
     background: url(../images/bg2.png) #eee;
     h2 {
@@ -345,6 +354,7 @@ p {
     h2 {
       text-transform: uppercase;
       font-family: 'Circe-Bold';
+      line-height: 46px;
     }
     &-btn {
       background-color: #a3cd8c;
@@ -354,7 +364,7 @@ p {
       font-size: 18px;
       text-transform: uppercase;
       color: white;
-      margin-top: 50px;
+      margin-top: 25px;
       padding: 20px 90px;
       transition: background-color .2s ease-in-out, color .2s ease-in-out, box-shadow .2s ease-in-out;
       &:hover {
@@ -366,18 +376,29 @@ p {
     }
   }
   &__nav {
-    float: left;
-    ul a {
+    background: #3a4258;
+    padding: 30px 0 20px 0;
+    &-item {
+      ul {
+        padding-left: 0;
+      }
+      ul a {
         text-decoration: none;
-      li {
-        display: inline;
-        margin-left: 25px;
-        text-transform: uppercase;
-        font-family: 'Circe';
+        li {
+          display: inline;
+          margin-left: 25px;
+          text-transform: uppercase;
+          font-family: 'Circe';
+          color: white;
+        }
       }
     }
-  }
-  &__title {
-    float: right;
+    &-title {
+      p {
+        float: right;
+        color: white;       
+      }
+
+    }
   }
 }
