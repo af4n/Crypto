@@ -21,10 +21,49 @@ hr {
   height: 730px;
   background: url(../images/bg1.png) #eee;
   padding-top: 20px;
-  border-bottom: 5px solid white;
     &__navbar {
     height: 50px;
   }
+  .navbar-header {
+    display: none;
+  }
+  .navbar-nav {
+    li a {
+      color: white;
+      font-size: 14px;
+      font-family: 'Circe';
+      text-transform: uppercase;
+    }
+    li a:hover {
+      color: white;
+    }
+    li a:focus {
+      color: white;
+    }
+    .header__nav-register {
+      border: 2px solid white;
+      border-radius: 25px;
+      padding: 12px 20px;
+      transition: background-color .2s ease-in-out, color .2s ease-in-out, box-shadow .2s ease-in-out;
+    }
+    .header__nav-register:hover {
+      background: white;
+      border: 2px solid white;
+      transition: background-color .2s ease-in-out, color .2s ease-in-out, box-shadow .2s ease-in-out;
+    }
+    .header__nav-register a {
+      padding: 0;
+    }
+    .header__nav-register a:hover {
+      color: #6b758e;
+    }
+  }
+  /*.navbar-nav > li > a {
+    color: white;
+  }
+  .navbar-nav > li > a:hover {
+    color: white;
+  }*/
   &__logo {
     float: left;
   }
@@ -50,6 +89,7 @@ hr {
     float: right;
     display: inline-block;
     line-height: 60px;
+    }
     &-register {
       border: 2px solid white;
       border-radius: 25px;
@@ -60,17 +100,6 @@ hr {
         border: 2px solid white;
         color: #6b758e;
         transition: background-color .2s ease-in-out, color .2s ease-in-out, box-shadow .2s ease-in-out;
-        }
-      }
-      ul a {
-        text-decoration: none;
-      li {
-        display: inline;
-        margin-left: 25px;
-        color: white;
-        text-transform: uppercase;
-        font-family: 'Circe';
-      }
     }
   }
   &__content {
@@ -401,4 +430,28 @@ hr {
 
     }
   }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    .navbar-header {
+      display: block;
+      img {
+        padding-left: 20px;
+      }
+    }
+    &__nav {
+      display: none;
+      float: none;
+      background: white;
+      li a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        color: black;
+      }
+    }
+  }
+  
 }
