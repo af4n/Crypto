@@ -11,7 +11,6 @@ p {
   font-family: Circe;
 }
 hr {
-
   margin: 0;
   width: 100%;
   opacity: 0.25;
@@ -432,6 +431,74 @@ hr {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .header {
+    &__currency {
+      span {
+        display: none;
+      }
+    }
+  }
+  .main {
+    &__reliability {
+      text-align: center;
+      &-img {
+        margin: 70px 0 100px 0;
+      }
+      &-mac {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    &__conditions {
+      &-img {
+        margin: 100px 0;
+      }
+      &-percent {
+        margin: 0 auto;
+      }
+      &-content {
+        text-align: center;
+      }
+    }
+    &__growth {
+      &-content {
+        text-align: center;
+        padding: 0 15px;
+      }
+      &-graph {
+        margin: 0 auto;
+      }
+    }
+    &__news {
+      &-transactions {
+        text-align: center;
+        table {
+          margin: 0 auto;
+        }
+      }
+      &-content {
+        text-align: center;
+      }
+    }
+  }
+  .footer {
+    &__nav {
+      &-item {
+        text-align: center;
+        ul a li {
+          margin-left: 15px;
+        }
+      }
+      &-title {
+        p {
+        float: none;
+        text-align: center;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   .header {
@@ -445,13 +512,92 @@ hr {
       display: none;
       float: none;
       background: white;
+      opacity: 0.5;
+    }
+    .navbar-nav {
       li a {
-        position: relative;
-        display: block;
-        padding: 10px 15px;
-        color: black;
+        color: #333;
+        text-align: center;
+      }
+      li a:hover {
+        color: #6b758e;
+      }
+    }
+    &__content {
+      h1 {
+        margin-top: 140px;
+        font-size: 38px;
+      }
+      p {
+        font-size: 14px;
+      }
+      &-btn {
+        padding: 20px 50px;
       }
     }
   }
-  
+  .main {
+    &__reliability {
+      text-align: center;
+    }
+    &__conditions {
+      text-align: center;
+      &-percent {
+        margin-bottom: 0;
+      }
+      &-content {
+        padding: 0 30px;
+      }
+    }
+    &__growth {
+      text-align: center;
+      &-content {
+        padding: 0 30px;
+      }
+      &-btn {
+        font-size: 12px;
+        padding: 15px;
+      }
+    }
+    &__news {
+      &-content {
+        text-align: center;
+        padding: 0 30px;
+      }
+    }
+  }
+  .footer {
+    .contacts {
+      &__form {
+        width: inherit;
+      }
+      form {
+        width: inherit;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 15px;
+      }
+    }
+    &__earning {
+      h2 {
+      text-transform: uppercase;
+      font-family: 'Circe-Bold';
+      font-size: 26px;
+      }
+    }
+    &__nav {
+      &-item {
+        text-align: center;
+        ul a li {
+          margin-left: 15px;
+        }
+      }
+      &-title {
+        p {
+        float: none;
+        text-align: center;
+        }
+      }
+    }
+  }
 }
